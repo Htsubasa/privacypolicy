@@ -101,7 +101,7 @@ body{
                             font-size: 18px;
                             list-style: none;
                             text-align: center;
-                            padding: 0px 20px;
+                            padding: 0px 23px;
                             font-family: 'Noto Serif JP', serif;
     
                             @include pc{
@@ -163,11 +163,28 @@ body{
     
                         .contact_li{
                             background-color: green;
+                            padding-right: 45px;
+                            padding-left: 45px;
+                            margin-left: 23px;
 
                         
                             @include tab{
                                 background-color: initial;
                             }
+                            @include sp{
+                                margin-left: 0px;
+                                padding-left: 20px;
+                            }
+
+
+                            .sp_span{
+                                display: none;
+                                
+                                @include tab{
+                                    display: initial;
+                                }       
+                            }
+    
     
                             a{
                                 line-height: 3em;
@@ -175,6 +192,7 @@ body{
                                 display: block;
                                 padding-top: 20px;
                                 padding-bottom: 20px;
+                                letter-spacing: 3.6px;
 
                                 @include pc{
                                     padding-top: 23.5px;
@@ -182,12 +200,12 @@ body{
                                 }
 
 
-                                @include tab{
-                                    padding-top: 0px;
-                                    padding-bottom: 0px;  
-                                    line-height: 1em;  
-                                }
-    
+                            @include tab{
+                                padding-top: 0px;
+                                padding-bottom: 0px;  
+                                line-height: 1em;  
+                            }
+
     
 
 
@@ -297,6 +315,7 @@ body{
             
     }/*inner*/
 }/*header*/
+
 
 
 
